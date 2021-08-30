@@ -5,7 +5,7 @@ Simple golang script to get a list of absolute file paths for all images and vid
 
 ```./pgbackup /volume1/.@plugins/AppCentral/photogallery/etc/photogallery.db tagname```
 
-The above creates a copy of the PhotoGallery sqllite3 database (as its locked) and finds all the images and photos with the specifited tag applied to them.
+The above creates a copy of the PhotoGallery sqllite3 database (as its locked) and finds all the images and videos with the specifited tag applied to them.
 It then outputs each absolute file path to `backupfiles.txt` in the current directory.
 
 This list can then be used to with `rsync --files-from=/tmp/pgbackup/backupfiles.txt` to copy the files to another directory setup with DataSync Center (eg. Google Drive)
